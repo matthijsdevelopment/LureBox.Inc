@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+    cursor: auto;
+    box-shadow: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 12px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+
+/* nav styling */
+
+nav {
+    background: #125D4D;
+    color: white;
+    width: 100%;
+    height: 65px;
+    margin-top: 65px;
+    box-shadow: 0px 3px 6px #0000001a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 15%;
+    color: white;
+}
+
+nav  a {
+    margin: auto;
+    color: white;
+}
+
+.nav-logo {
+    height: 200px;
+    width: 175px;
+    background: white;
+    display: flex;
+    box-shadow: 0px 3px 6px #0000001a;
+    position: relative;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 140px;
+    height: 140px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    width: 136px;
+}
+
+.nav-right svg {
+    height: 40px;
+    width: auto;
+    fill: white;
+}
+
+.nav-left {
+    width: 312px;
+    display: flex;
+    margin-right: 40%;
+    justify-content: space-between;
+}
+
+/* container start */
+
+.container {
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.catagorie {
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    height: 250px;
+}
+
+.snoek {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 178, 148, 0.260), rgba(39, 178, 148, 0.260)),
+    url('../img/pike3.png');
+}
+
+.snoekbaars {
+    background-image:
+    linear-gradient(to bottom, rgba(172, 206, 116, 0.350), rgba(172, 206, 116, 0.350)),
+    url('../img/snoekbaars.png');
+}
+
+.streetfishing {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 178, 148, 0.200), rgba(39, 178, 148, 0.200)),
+    url('../img/streetfishing.png');
+}
+
+.baars {
+    background-image:
+    linear-gradient(to bottom, #00000036, #00000036),
+    url('../img/baars.png');
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    margin: 43px 0px 50px 60px;
+}
+
+.product-text button {
+    width: 300px;
+    height: 60px;
+    color: white;
+    border: none;
+    font-size: 22px;
+    border-radius: 50px;
+    background-color: #27B295;
+}
+
+.product-text span {
+    font-size: 58px;
+     color: white;
+     margin-bottom: 30px;
+}
+
+.right {
+    margin: 43px 80px 50px 0px;
+    float: right;
+}
+
+.container div:not(:first-child) {
+    margin-top: 19px;
+}
